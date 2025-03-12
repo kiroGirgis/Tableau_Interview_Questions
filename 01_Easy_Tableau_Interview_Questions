@@ -1,1 +1,87 @@
+Easy Tableau Interview Questions
+Tableau is a powerful data visualization tool widely used for business intelligence and data analysis.
+Whether you are preparing for an entry-level role or looking to strengthen your foundational knowledge,
+the Easy Tableau Interview Questions section is a great place to start.
+This section covers fundamental Tableau concepts,
+including data connections, dimensions vs. measures, basic chart types, filters, parameters, and calculated fields. 
+Understanding these core functionalities will help you build confidence in navigating Tableau and creating insightful visualizations.
+Employers often evaluate these basic skills to ensure candidates can efficiently explore and present data using Tableau’s intuitive interface.
+Author: Kirolos Girgis
 
+1- What is Tableau, and why is it used?
+
+ANSWER:
+Tableau is a leading data visualization and business intelligence tool that helps users analyze and present data through interactice dashboards and reports.
+It is widely used for data exploration, trend analysis and decision-making by transforming raw data into visually appealing and easy to understand insights
+
+2- What are the different data types in Tableau?
+
+ANSWER:
+Tableau suppports data types such as Strings, number, boolean, date, date & Time, Geographic, and cluster.
+
+3- What are the different file extensions in Tableau?
+
+ANSWER:
+.twb – Tableau Workbook (does not store data)
+.twbx – Tableau Packaged Workbook (includes data & resources)
+.tds – Tableau Data Source (stores metadata & formatting)
+.tdsx – Tableau Packaged Data Source (contains data and metadata)
+.tde – Tableau Data Extract (old extract format)
+.hyper – Hyper Extract (newer, faster extract format)
+.tbm – Tableau Bookmark (saves worksheets for reuse)
+.tms – Tableau Map Source (custom mapping configurations)
+
+4- What is the difference between a live connection and an Extract
+
+ANSWER:
+Live Connection, directly connects to the data source and updates in real time. It is useful when working with frequently changing data.
+On the other hand, extract is a snapshot of the data stored locallly in a .hyper file. It provides faster performance and allows offline access but requires manual or scheduled refreshes
+
+5- What are Dimensions and Measures in Tableau
+
+ANSWER:
+Dimensions are qualitative data that define categories. These fields are typically non- numeric and used for segmentation
+On the other hand, Measures are quantitative data that can be aggregated. Measures are used for numerical analaysis
+
+6- What is a Calculated field?
+
+ANSWER:
+A Calculated field allows users to create new data fields using formulas and existing data. 
+These fields can be used for custom calculations, aggregations, or logic-based outputs
+
+7- what is a parameter in Tableau?
+
+ANSWER:
+A Parameter is a dynamic input control that allows users to modify values in calculations, filters, and visualizations.
+Unlike filters, parameters are not directly linked to data fields and require calculated fields or reference lines
+
+8- what are filters in Tableau? Name the different types?
+
+ANSWER:
+Filters in Tableau allow users to control the data displayed in a visualization
+- Extract Filters – Filters data while creating an extract.
+- Data Source Filters – Filters data before it reaches the workbook.
+- Context Filters – A primary filter that affects other filters.
+- Dimension Filters – Filters categorical fields (e.g., filtering by region).
+- Measure Filters – Filters numeric values (e.g., filtering sales > 1000).
+- Table Calculation Filters – Filters data after table calculations are applied.
+
+9- How do you create a hirarchy in Tableau?
+
+ANSWER:
+A hierarchy is used to drill down into different levels of data.
+Steps to create a hierarchy:
+
+Drag one dimension (e.g., State) onto another dimension (e.g., Country).
+Rename the hierarchy if needed.
+Expand or collapse the hierarchy in the visualization using the + symbol.
+
+10- What are the different Types of joins in Tableau?
+
+ANSWER:
+Tableau supports four types of joins:
+
+Inner Join – Returns only matching records between two tables.
+Left Join – Returns all records from the left table and matching records from the right.
+Right Join – Returns all records from the right table and matching records from the left.
+Full Outer Join – Returns all records from both tables, filling in nulls where no match exists.
