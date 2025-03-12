@@ -1,1 +1,84 @@
+Advanced Tableau Interview Questions
+For those aiming to excel in data visualization and business intelligence, mastering Tableau’s advanced functionalities is crucial.
+The Advanced Tableau Interview Questions section focuses on complex topics such as LOD expressions (Fixed, Include, Exclude), data densification, performance tuning, row-level security (RLS), data scaffolding, and Tableau integration with Python/R. 
+These advanced concepts help analysts work with large datasets efficiently and develop scalable, high-performance dashboards.
+Employers highly value candidates who can solve complex analytical challenges, enhance user interactivity, and integrate Tableau with broader data ecosystems.
+Author: Kirolos Girgis
 
+
+1- What is the difference between fixed, include, and Exclude LOD expressions?
+
+ANSWER:
+Level of Detail (LOD) expressions allow calculations at different levels of aggregation that what is displayed in the visualization
+- Fixed: Computes at a specific level, ignoring filters (unless they are context filters)
+- INCLUDE: includes additional dimensions in the aggregation, useful for more detailed calculations
+- EXCLUDE: Removes specific dimensions from aggregation, useful for higher-level summaries
+
+2- How do you perform data Densification in Tableau?
+
+ANSWER:
+Data Densification fills in missing data points in a dataset to create continuous visualizations
+Techniques:
+Show Missing Values: Right-click a date or bin and select "Show Missing Values" to fill gaps.
+Use a Data Scaffold: Create a helper table to provide the missing values and join it with the original dataset.
+Use INDEX() or LOOKUP() in Table Calculations: Helps fill missing data points.
+
+3- What is the difference between a Data Extract and a Hyper Extract?
+
+ANSWER:
+- Data Extract (.tde): Tableau;s older extract format, optimized for speed but less efficient with large datasets.
+- Hyper Extract(.hyper): the newer, more optimized format that handles larger datasets and faster performance
+
+4- How do you handle large datasets and improve dashboard efficiency?
+
+ANSWER:
+Use Extracts instead of Live Connections (especially for slow databases).
+Reduce Quick Filters and High-Cardinality Fields.
+Use Aggregations & Calculated Fields efficiently.
+Limit the number of marks (data points) on the view.
+Optimize Joins and Blends (use relationships instead).
+Enable Query Caching to speed up repeated queries.
+Reduce Sheets in a Dashboard to improve load times.
+
+5- How does Tableau handle NULL values, and how do you work around them?
+
+ANSWER:
+NULL values in Dimensions are shown as NULL in the view or removed if used in a filter.
+On the other hand, Null values in Measures are treated as 0 in aggregations but ignored in calculations
+
+6- What is a Data Scaffold, and when would you use it?
+
+ANSWER:
+A Data Scaffold is a secondary dataset that provides missing structure to fill gaps in the data
+Data Scaffold can be used to fill in missing dates or categories, Enabling data densification when the original dataset is sparse, and supporting complex calculations that need additional data points.
+
+7- Explain the concept of Data Aggregation in Tableau?
+
+ANSWER:
+Aggregation refers to combining multiple data points into a summary value
+
+8- How do you create and use a Dynamic Parameter?
+
+ANSWER:
+A dynamic Parameter updates automatically based on changing data instead of requiring manual updates
+
+9- How do you integrate Tableau with R or Python?
+
+ANSWER:
+Tableau can run R or Python scripts for advanced analytics using the TabPy (Tableau Python Server) or Rserve (for R integration).
+
+10- How do you implement Row-Level Security (RLS) in Tableau?
+
+ANSWER:
+Row-Level Security (RLS) restricts data access based on user roles or login credentials.
+
+Methods to Implement RLS:
+
+User Filters in Tableau Server:
+Create a calculation: USERNAME() = [AssignedUser].
+Apply it as a filter.
+Using Data Source Filters:
+Define rules within a published data source.
+Using a Security Table in the Database:
+Create a mapping table (User → Allowed Regions).
+Join it with the main data in Tableau.
