@@ -1,1 +1,94 @@
+Intermediate Tableau Interview Questions
+As you advance in your Tableau skills, you’ll need a deeper understanding of data manipulation, interactivity, and performance optimization.
+The Intermediate Tableau Interview Questions section delves into more complex topics such as context filters, table calculations, data blending, dual-axis charts, and Level of Detail (LOD) expressions.
+Mastering these concepts allows you to create dynamic and interactive dashboards that provide deeper business insights. 
+Employers seek candidates who can not only build visualizations but also optimize data structures, enhance dashboard performance, and make strategic use of Tableau’s advanced filtering and calculation features.
+Author: Kirolos Girgis
 
+1- Explain the difference between Context filters and regular filters?
+
+ANSWER:
+Regular Filters are filters that work independently and are applied to the entire dataset. If multiple filters exist, Tableau processes them in the order they were added.
+On the other hand, Context Filters: these are higher -priority filters that determine a subset of data, which is then used by other filters. They improve performance by reducing the amount of data being processed.
+
+2- What is the difference between a discrete and continous field?
+
+ANSWER:
+Discrete Fields: represent categorical data and create headers in visualizations.
+On the other hand, Continuous fields: represent numerical or date data and create axes.
+
+3- What is a blended data source, and how is it different from joins?
+
+ANSWER:
+Blended Data Source: conbines data from two separate data sources (SQL database + Excel) by linking them based on a common field.
+It maintains data separation but allows cross-source analysis. On the other hand, Joins comnine tables within the same data source by merging records based on a common key.
+
+4- How do you create a Dual-Axis chart in Tableau?
+
+ANSWER:
+A Dual-Axis Chart allows two different measures to be plotted on the same chart with separate axes
+Steps
+- Drag the first measure to the Rows or Columns shelf.
+- Drag the second measure to the same shelf (it will create a second chart)
+- Click on the second measure's dropdown and select "Dual-Axis"
+- Synchronize axes if needed
+
+5- What are Table calcualtions, and when would you use them?
+
+ANSWER:
+Table Calculations are computed after aggrgations and work within the visualization's scope
+Common Table Calculations:
+- Running Total: Accumulative sum of a measure's
+- Percent of Totla: Computes a measure's percentage of the total
+- Difference: Computes the difference from a previous row
+- Moving Average: Smoothes out fluctuations in data.
+
+6- What is LOD(Level of Detail in Tableau? Name its types
+
+ANSWER:
+LOD expressions control thge level at which calculations are performed, independent of the visualization's granualarity
+
+FIXED: Ignores visualization filters and computes at a specified level.
+INCLUDE: Includes additional dimensions in aggregation.
+EXCLUDE: Ignores specific dimensions in calculation.
+
+7- What are actions in Tableau, and how do they improve interactivity?
+
+ANSWER:
+Actions allow users to interact with a dashboard dynamically
+Types of Actions:
+Filter Action – Clicking one chart filters another.
+Highlight Action – Highlights related data points across charts.
+URL Action – Opens a URL when a user interacts with a visualization.
+
+8- How do you optimize the performance of a Tableau dashboard?
+
+ANSWER:
+Ways to improve performance:
+
+Use Extracts instead of Live connections.
+Minimize the number of Quick Filters.
+Use Aggregated Data (LOD calculations instead of complex calculations in SQL).
+Reduce the number of marks on a visualization.
+Optimize data source connections (avoid complex joins).
+Minimize high-cardinality fields (e.g., avoid unique customer IDs in views).
+
+9- What is a Reference Line, and how do you use it?
+
+ANSWER:
+A Reference Line is an annotation that helps compare values in a visualization.
+
+Types of Reference Lines:
+
+Constant Line: Fixed value (e.g., a goal of 10,000 sales).
+Average Line: Shows the average value in the dataset.
+Median Line: Displays the median value.
+Dynamic Reference Line: Based on parameters.
+
+10- What is the difference between a Treemap and a Heat Map?
+
+ANSWER:
+Treemap: Uses nested rectangles to represent hierarchical data with size and color.
+Heat Map: Uses color intensity to show variations in a measure across two dimensions.
+
+ANSWER:
