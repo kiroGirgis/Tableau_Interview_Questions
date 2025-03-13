@@ -91,4 +91,24 @@ ANSWER:
 Treemap: Uses nested rectangles to represent hierarchical data with size and color.
 Heat Map: Uses color intensity to show variations in a measure across two dimensions.
 
+11- What is a Blended Data Source, and how is it different from Joins?
+
 ANSWER:
+Blended Data Sources combine two different data sources in Tableau using a common field while Joins occur at the database level before the data reaches Tableau
+
+12- What are Hierarchies in Tableau?
+
+ANSWER:
+Hierarchies allow users to drill down into data
+
+13- What are Quick Table Calculations?
+
+ANSWER:
+Pre-built table calculations such as Running Total, Difference, Percent of Total, and Rank
+
+14- What is a Parameter, and how is it used?
+
+ANSWER:
+A Parameter is a dynamic input (user-controlled) that allows flexibility in calculations and filters
+
+
