@@ -85,3 +85,68 @@ Inner Join – Returns only matching records between two tables.
 Left Join – Returns all records from the left table and matching records from the right.
 Right Join – Returns all records from the right table and matching records from the left.
 Full Outer Join – Returns all records from both tables, filling in nulls where no match exists.
+
+11- What is a Dashboard in Tableau?
+
+ANSWER: A Dashboard is a collection of multiple visualizations, charts, and KPIs (Key Performance Indicators) in a single view, allowing users to interact with data efficiently.
+
+12- What are sheets in Tableau/
+
+ANSWER:
+Sheets refer to individual visualizations, dashboards, or stories within a Tableau workbook.
+
+13- How do you connect Tableau to a data source?
+
+ANSWER:
+Open Tableau.
+Click on Connect and select a data source (Excel, SQL, etc.).
+Configure connection settings and load the data into Tableau.
+
+14- What are the different types of filters in Tableau?
+
+ANSWER:
+Extract Filters – Filter data when creating an extract.
+Data Source Filters – Apply filters at the data source level.
+Context Filters – Improve performance by filtering before other filters.
+Dimension Filters – Filter categorical data (e.g., Region, Product).
+Measure Filters – Filter numeric values (e.g., Sales > 1000).
+
+15- What is the difference between Discrete and Continuous fields in Tableau?
+
+ANSWER:
+Discrete Fields represent categorical data while continuous fields represent numerical values
+
+16- How do you sort data in Tableau?
+
+ANSWER:
+Click on the axis or field header.
+Use Ascending/Descending Sort.
+Use a custom sort order in the "Sort" menu.
+
+17- What is a story in Tableau?
+
+ANSWER:
+A Story is a sequence of dashboards or sheets used to tell a data-driven narrative.
+
+18- How do you format numbers in Tableau?
+
+ANSWER:
+Right-click the measure (e.g., Sales).
+Select Format.
+Choose currency, percentage, or decimal format.
+
+19- How do you add labels to a visualization?
+
+ANSWER:
+Drag a field to the Label shelf.
+Customize using the Text options.
+
+20- What is the difference between SUM() and COUNT()?
+
+ANSWER:
+SUM() totals numeric values (e.g., SUM([Sales])).
+COUNT() returns the number of records (e.g., COUNT([Orders])).
+
+
+
+
